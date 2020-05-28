@@ -3,12 +3,18 @@ html, body, #root {
     height: 100%;
 }
 
+$primary-background: #222;
+
 .main-full-height {
     height: 100vh;
 }
 
+body {
+    background-color: $primary-background;
+}
+
 .main{
-    background-color: #222;
+    background-color: $primary-background;
     color: #fff;
     display: flex;
     justify-content: center;

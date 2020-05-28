@@ -66,7 +66,7 @@ export default function Home(props) {
     }
 
     return (
-        <div className={classnames({ "main": true, "main-full-height": isFetching || !characters || characters.length < 7})}>
+        <div className={classnames({ "main": true, "main-full-height": isFetching || !filteredCharacters || filteredCharacters.length < 6})}>
             <main className="main--container">
                 <h1>Breaking Bad</h1>
                 <input 

@@ -4,7 +4,7 @@ import './style.scss';
 
 export default function CardBoxContainer({ characters}) {
     if (!characters) return null;
-    if (characters.length === 0) return <div>Nenhum dado foi encontrado</div>
+    if (characters.length === 0) return <div>No data available!</div>
 
     return (
         <div className="cardbox">
