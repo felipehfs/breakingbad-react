@@ -1,5 +1,16 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .card {
     padding: 5px;
+    animation: fadeIn .4s;
 
     .card--avatar {
         width: 100%;

@@ -58,11 +58,11 @@ export default function Home(props) {
     }   
 
     const handleCheckAlive = (event) => {
-        setStatusAlive(event.target.checked)
+        setStatusAlive(event.target.checked);
     }
 
     const handleCheckDeath = (event) => {
-        setStatusDeath(event.target.checked)
+        setStatusDeath(event.target.checked);
     }
 
     return (
@@ -73,21 +73,24 @@ export default function Home(props) {
                     value={search}
                     onChange={handleOnchange}
                     type="text" 
+                    placeholder="Say my name"
                     className="main--input"/>
                 <div className="checks">
                     <div>
                         <input type="checkbox" 
                             name="alive"
+                            id="alive"
                             onChange={handleCheckAlive}
                             checked={statusAlive}/> 
-                        <label>Alive</label>
+                        <label for="alive">Alive</label>
                     </div>
                     <div>
                         <input type="checkbox" 
                             name="death"
+                            id="death"
                             onChange={handleCheckDeath}
                             checked={statusDeath}/> 
-                        <label>Death</label>
+                        <label for="death">Death</label>
                     </div>
 
                 </div>
